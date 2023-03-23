@@ -1,0 +1,41 @@
+Make Me A Video Game!
+
+I the {Adjective} and {Adjective} {A First Name} have {Past Tense Verb} {A First Name}'s {Adjective} sister and plan to steal her {Adjective} {Plural Noun}!
+
+What are a {Large Animal} and backpacking {Small Animal} to do? Before you can help {A Girl's Name}, you'll have to collect the {Adjective} {Plural Noun} and {Adjective} {Plural Noun} that open up the {Number 1-50} worlds connected to A {First Name}'s Lair. There are {Number} {Plural Noun} and {Number} {Plural Noun} in the game, along with hundreds of other goodies for you to find.
+
+#create a variable called adjectives =[]
+
+#create a variable called visited_characters = ""
+visited_character = ""
+#create a variable called temp_word_to_capture = ""
+temp_word_to_capture= ""
+#create a variable called capturing = false
+capturing = false
+#for loop through each letter in the text
+#for ea character in txt
+
+
+#if the character is not an "{", add the character to the visited_characters
+    if not char == "{"
+        visited_character += char
+
+#if the character is an "{" ,
+#add the character to visited_characters
+    if char == "{"
+        visited_character += char
+        capturing = true
+    else:
+        temp_word_to_capture += char
+    if char == "}"
+        adjectives.append(temp_word_to_capture)
+        capturing = false
+        visited_character += char
+    return visited_character
+
+    #change capturing = true
+#if capturing = true, add character to temp_word_to_capture
+#if character is a "}", add the character to visited_characters
+#append temp word to adjectives
+#turn capturing = false
+#return visited_characters
